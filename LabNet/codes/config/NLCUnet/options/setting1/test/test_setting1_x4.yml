@@ -1,0 +1,59 @@
+name: LabNet_STEAx4_setting1
+#name: LabNet_TTEAx4_setting1
+suffix: ~  # add suffix to saved images
+model: blind
+distortion: sr
+scale: 4
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [0]
+pca_matrix_path: /share/home/104825/jiancong/NLCUnet/pca_matrix/NLCUnet/pca_matrix.pth
+
+datasets:
+#  test1:
+#    name: Real-World38
+#    mode: LQGT
+#    dataroot_GT: /share/home/104825/jiancong/Real38_lmdb/hr.lmdb
+#    dataroot_LQ: /share/home/104825/jiancong/Real38_lmdb/lr.lmdb
+  test1:
+    name: Set5
+    mode: LQGT
+    dataroot_GT: /share/home/104825/jiancong/Set5-unet-lmdb/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/Set5-unet-lmdb/lr_blur.lmdb
+  test2:
+    name: Set14
+    mode: LQGT
+    dataroot_GT: /share/home/104825/jiancong/Set14_crop-lmdb/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/Set14_crop-lmdb/lr_blur.lmdb
+  test3:
+    name: BSDS100
+    mode: LQGT
+    dataroot_GT: /share/home/104825/jiancong/BSDS100_crop-lmdb/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/BSDS100_crop-lmdb/lr_blur.lmdb
+  test4:
+    name: urban100
+    mode: LQGT
+    dataroot_GT: /share/home/104825/jiancong/urban100_crop-lmdb/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/urban100_crop-lmdb/lr_blur.lmdb
+  test5:
+    name: manga109
+    mode: LQGT
+    dataroot_GT: /share/home/104825/jiancong/manga109_crop-lmdb/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/manga109_crop-lmdb/lr_blur.lmdb
+
+
+#### network structures
+network_G:
+  which_model_G: LabNet_STEA
+  setting:
+    nf: 64
+    nb: 40
+    upscale: 4
+    input_para: 10
+    loop: 0
+    kernel_size: 21
+
+#### path
+path:
+  pretrain_model_G: /share/home/104825/jiancong/LabNetx4.pth
+#  pretrain_model_G: /share/home/104825/jiancong/1120000_G.pth
+#  pretrain_model_G: /share/home/104825/jiancong/NLCUnet/1005000_G.pth
