@@ -1,11 +1,11 @@
-name: DANx3_setting1
+name: LabNet_STEAx3_setting1
 suffix: ~  # add suffix to saved images
 model: blind
 distortion: sr
 scale: 3
 crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
 gpu_ids: [0]
-pca_matrix_path: /share/home/104825/jiancong/NLCUnet/pca_matrix/NLCUnet/pca_matrix.pth
+pca_matrix_path: /share/home/104825/jiancong/LabNet/pca_matrix/LabNet/pca_matrix.pth
 
 datasets:
   test1:
@@ -37,16 +37,14 @@ datasets:
 
 #### network structures
 network_G:
-  which_model_G: NLCUnet
+  which_model_G: LabNet_STEA
   setting:
     nf: 64
     nb: 40
     input_para: 10
-    loop: 1
+    loop: 0
     kernel_size: 21
 
 #### path
 path:
-  pretrain_model_G: /share/home/104825/jiancong/765000_G.pth
-#path:
-#  pretrain_model_G: /share/home/104825/jiancong/605000_G.pth ## Set5 Best
+  pretrain_model_G: /share/home/104825/jiancong/LabNetx3.pth

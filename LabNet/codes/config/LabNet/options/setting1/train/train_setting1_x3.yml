@@ -1,11 +1,10 @@
-#### general settings
-name: NLCUnetx4_setting1
+name: LabNet_STEAx3_setting1
 use_tb_logger: true
 model: blind
 distortion: sr
-scale: 4
+scale: 3
 gpu_ids: [0, 1]
-pca_matrix_path: /share/home/104825/jiancong/NLCUnet/pca_matrix/NLCUnet/pca_matrix.pth
+pca_matrix_path: /share/home/104825/jiancong/LabNet/pca_matrix/LabNet/pca_matrix.pth
 
 degradation:
   random_kernel: True
@@ -26,32 +25,32 @@ datasets:
     use_shuffle: true
     n_workers: 8  # per GPU
     batch_size: 20
-    GT_size: 256
+    GT_size: 192
     LR_size: 64
     use_flip: true
     use_rot: true
     color: RGB
   val:
-    name: SET5
+    name: DIV2KRK
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/Set5-unet-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/Set5-unet-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/Set5-unet-lmdbx3/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/Set5-unet-lmdbx3/lr_blur.lmdb
 
 #### network structures
 network_G:
-  which_model_G: NLCUnet
+  which_model_G: LabNet_STEA
   setting:
     nf: 64
-    nb: 25
+    nb: 40
     input_para: 10
-    loop: 1
+    loop: 0
     kernel_size: 21
 
 #### path
 path:
   pretrain_model_G: ~
   strict_load: true
-  resume_state: /share/home/104825/jiancong/NLCUnet/experiments/NLCUnet/NLCUnetx4_setting1/training_state/410000.state
+  resume_state: ~
 
 #### training settings: learning rate scheme, loss
 train:
@@ -69,7 +68,6 @@ train:
   pixel_weight: 1.0
 
   manual_seed: 0
-#  val_freq: 5
   val_freq: !!float 2.5e3
 
 #### logger

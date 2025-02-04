@@ -145,10 +145,6 @@ class B_Model(BaseModel):
 
         self.fake_SR = sr
 
-        # set parameters
-        up_scale = 4
-        mod_scale = 4
-
         total_loss = 0
         
         d_sr = self.cri_pix(sr, self.real_H)
