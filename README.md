@@ -4,7 +4,7 @@
 通过网盘分享的文件：pretrain_model
 链接: https://pan.baidu.com/s/1TRrABPW4hO2JoQ5zGWlw_g?pwd=hhxx 提取码: hhxx
 
-欢迎你与我联系！
+欢迎你与我联系！正在飞速完善仓库中🏃.......‍
 
 wechat:
 monakasen
