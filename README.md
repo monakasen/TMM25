@@ -30,3 +30,25 @@ monakasen
 
 QQ:
 851805291
+
+
+特别感谢代码仓库：https://github.com/greatlog/DAN  
+我们的仓库是基于以上仓库进行修改，如果使用到本仓库，也请对以下论文进行引用：  
+```bash
+@article{luo2020unfolding,
+  title={Unfolding the Alternating Optimization for Blind Super Resolution},
+  author={Luo, Zhengxiong and Huang, Yan and Li, Shang and Wang, Liang and Tan, Tieniu},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={33},
+  year={2020}
+}
+@misc{luo2021endtoend,
+      title={End-to-end Alternating Optimization for Blind Super Resolution}, 
+      author={Zhengxiong Luo and Yan Huang and Shang Li and Liang Wang and Tieniu Tan},
+      year={2021},
+      eprint={2105.06878},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
