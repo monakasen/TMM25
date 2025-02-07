@@ -4,7 +4,7 @@ model: blind
 distortion: sr
 scale: 3
 crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
-gpu_ids: [0]
+gpu_ids: [0, 1]
 pca_matrix_path: /share/home/104825/jiancong/LabNet/pca_matrix/LabNet/pca_matrix.pth
 
 datasets:
