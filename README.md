@@ -1,5 +1,10 @@
 # 欢迎你与我联系！正在飞速完善仓库中🏃......
 
+## **配置环境**
+```bash
+conda env create -f environment.yml
+```
+
 ## **LabNet的测试数据集和预训练模型**  
 通过网盘分享的文件：test_datasets
 链接: https://pan.baidu.com/s/13JjegeIgyoLb5Db9zmKXIw?pwd=hhxx 提取码: hhxx
