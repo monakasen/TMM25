@@ -6,7 +6,8 @@
 
 欢迎你与我联系！正在飞速完善仓库中🏃.......‍
 
-测试指令：
+测试指令：  
+
 (x4模型)
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/test.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/test/test_setting1_x4.yml
