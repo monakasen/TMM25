@@ -37,7 +37,7 @@ http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
 
 ## **LabNet的训练指令**
 ```bash
-CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104632/jiancong/LabNet/codes/config/LabNet/train.py -opt=/share/home/104632/jiancong/LabNet/codes/config/LabNet/options/setting1/train/train_setting1_x4.yml
+CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/train.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/train/train_setting1_x4.yml
 ```
 
 ## **RealNet的测试指令**
