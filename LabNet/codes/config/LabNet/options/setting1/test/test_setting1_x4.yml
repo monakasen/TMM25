@@ -12,28 +12,28 @@ datasets:
   test1:
     name: Set5
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/Set5-unet-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/Set5-unet-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/Set5-unet-lmdbx4/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/Set5-unet-lmdbx4/lr_blur.lmdb
   test2:
     name: Set14
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/Set14_crop-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/Set14_crop-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/Set14_crop-lmdbx4/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/Set14_crop-lmdbx4/lr_blur.lmdb
   test3:
     name: BSDS100
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/BSDS100_crop-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/BSDS100_crop-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/BSDS100_crop-lmdbx4/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/BSDS100_crop-lmdbx4/lr_blur.lmdb
   test4:
     name: urban100
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/urban100_crop-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/urban100_crop-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/urban100_crop-lmdbx4/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/urban100_crop-lmdbx4/lr_blur.lmdb
   test5:
     name: manga109
     mode: LQGT
-    dataroot_GT: /share/home/104825/jiancong/manga109_crop-lmdb/hr.lmdb
-    dataroot_LQ: /share/home/104825/jiancong/manga109_crop-lmdb/lr_blur.lmdb
+    dataroot_GT: /share/home/104825/jiancong/manga109_crop-lmdbx4/hr.lmdb
+    dataroot_LQ: /share/home/104825/jiancong/manga109_crop-lmdbx4/lr_blur.lmdb
 
 
 #### network structures
