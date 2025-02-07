@@ -30,7 +30,10 @@ CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/con
 ```
 
 ## **LabNet的训练数据集下载地址** 
-
+#### **DIV2K**
+https://data.vision.ee.ethz.ch/cvl/DIV2K/
+#### **Flickr2K**
+http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
 
 ## **LabNet的训练指令**
 ```bash
