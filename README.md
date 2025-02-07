@@ -29,6 +29,14 @@ CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/con
 CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/test.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/test/test_setting1_x2.yml
 ```
 
+## **LabNet的训练数据集下载地址** 
+
+
+## **LabNet的训练指令**
+```bash
+CUDA_VISIBLE_DEVICES=0,1 srun --gpus=4 -n4 --gres=gpu:2 --ntasks-per-node=8 --job-name=fjc4 python3 -u /share/home/104632/jiancong/LabNet/codes/config/LabNet/train.py -opt=/share/home/104632/jiancong/LabNet/codes/config/LabNet/options/setting1/train/train_setting1_x4.yml --launcher pytorch
+```
+
 ## **RealNet的测试指令**
 ```bash
 xxx
