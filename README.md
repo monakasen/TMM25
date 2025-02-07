@@ -37,7 +37,7 @@ http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
 
 ## **LabNet的训练指令**
 ```bash
-CUDA_VISIBLE_DEVICES=0,1 srun --gpus=4 -n4 --gres=gpu:2 --ntasks-per-node=8 --job-name=fjc4 python3 -u /share/home/104632/jiancong/LabNet/codes/config/LabNet/train.py -opt=/share/home/104632/jiancong/LabNet/codes/config/LabNet/options/setting1/train/train_setting1_x4.yml --launcher pytorch
+CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104632/jiancong/LabNet/codes/config/LabNet/train.py -opt=/share/home/104632/jiancong/LabNet/codes/config/LabNet/options/setting1/train/train_setting1_x4.yml
 ```
 
 ## **RealNet的测试指令**
