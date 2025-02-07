@@ -8,27 +8,32 @@
 链接: https://pan.baidu.com/s/1TRrABPW4hO2JoQ5zGWlw_g?pwd=hhxx 提取码: hhxx
 
 
-## **测试指令**
-(LabNetx4模型)
+## **LabNet的测试指令**
+### LabNetx4模型
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/test.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/test/test_setting1_x4.yml
 ```
 
-(LabNetx3模型)
+### LabNetx3模型
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/test.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/test/test_setting1_x3.yml
 ```
 
-(LabNetx2模型)
+### LabNetx2模型
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/config/LabNet/test.py -opt=/share/home/104825/jiancong/LabNet/codes/config/LabNet/options/setting1/test/test_setting1_x2.yml
 ```
 
+## **RealNet的测试指令**
+```bash
+xxx
+```
+
 ## **联系方式**  
-wechat:
+### **wechat**
 monakasen
 
-QQ:
+### **QQ**
 851805291
 
 
