@@ -1,6 +1,6 @@
 ### 论文标题：Image Super-Resolution with Taylor Expansion Approximation and Large Field Reception (TMM25)，代码在master里面
 
-### **slurm集群的基本使用：**
+# **slurm集群的基本使用：**
 #### 1. 查询当前有哪些任务在执行
 ```bash
 squeue
