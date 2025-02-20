@@ -42,8 +42,8 @@ sinfo -R
 ```bash
 ssh gn8
 ```
-#### 从原本的(base) fjc@ln0:\~\$ ssh gn8，变为(base) wangymlab03@gn8:\~\$ 
-#### 此时，我们可以查看当前节点显卡使用情况
+#### 从原本的(base) fjc@ln0:\~\$ ssh gn8，变为(base) fjc@gn8:\~\$ 
+#### 其中，ln为登陆节点。此时，我们可以查看当前节点显卡使用情况
 ```bash
 watch -n 1 nvidia-smi
 ```
