@@ -1,4 +1,4 @@
-### 论文标题：Image Super-Resolution with Taylor Expansion Approximation and Large Field Reception (TMM25) 代码在master里面
+### 论文标题：Image Super-Resolution with Taylor Expansion Approximation and Large Field Reception (TMM25)，代码在master里面
 
 ### **slurm集群的基本使用：**
 #### 1. 查询当前有哪些任务在执行
@@ -52,3 +52,28 @@ watch -n 1 nvidia-smi
 ctrl+a+d
 ```
 #### 从(base) fjc@gn8:\~\$，变回(base) fjc@ln0:\~\$
+#### 7. 执行python脚本
+```bash
+srun -p g_v100 --nodelist=gn8 --gpus=1 python xxx.py
+```
+#### 其中，-p指定特定分区名称，--nodelist指定节点名。--gpus指定GPU使用数量。
+#### 值得注意的是，当使用srun长时间执行任务时，我们可以结合screen来创建窗口：
+```bash
+screen -S test
+```
+#### 其中,-S test表示创建一个名为test的窗口。我们还可以查询有哪些窗口：
+```bash
+screen -ls
+```
+#### 退出窗口：
+```bash
+ctrl+a+d
+```
+#### 进入某个id对应的窗口（先使用screen -ls查询，得到窗口id）：
+```bash
+screen -r 窗口id
+```
+#### 删除窗口：
+```bash
+screen -S 窗口id -X quit
+```
