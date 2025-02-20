@@ -44,7 +44,7 @@ CUDA_VISIBLE_DEVICES=0,1 python3 -u /share/home/104825/jiancong/LabNet/codes/con
 
 ## **RealNet的测试指令**
 ```bash
-xxx
+别急
 ```
 
 ## **联系方式**  
