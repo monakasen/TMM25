@@ -20,3 +20,14 @@ squeue
 | JOBID | PARTITION |  NAME  | USER | ST |  TIME | NODES | NODELIST(REASON) |
 |:-----:|:---------:|:------:|:----:|:--:|:-----:|:-----:|:----------------:|
 |  1235 |   g_v100  | python |  fjc |  R | xx:xx |   1   |       gn10       |
+#### 3. 查询节点情况
+```bash
+sinfo
+```
+| PARTITION | AVAIL | TIMELIMIT | NODES | STATE |  NODELIST  |
+|:---------:|:-----:|:---------:|:-----:|:-----:|:----------:|
+|   g_v100  |   up  |  infinite |   3   |  mix  | gn[4,8,10] |
+|   g_v100  |   up  |  infinite |   4   | alloc |  gn[1-3,5] |
+|   g_v100  |   up  |  infinite |   3   |  idle |  gn[6-7,9] |
+#### 其中，STATE为mix代表该节点部分显卡已被使用，alloc代表全部显卡已被使用，idle代表全部显卡空闲。
+#### 例如，gn4、gn8和gn10三个节点有部分显卡被使用，gn1、gn2、gn3和gn5所有显卡被使用，gn6、gn7和gn9空闲。
