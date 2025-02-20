@@ -31,3 +31,10 @@ sinfo
 |   g_v100  |   up  |  infinite |   3   |  idle |  gn[6-7,9] |
 #### 其中，STATE为mix代表该节点部分显卡已被使用，alloc代表全部显卡已被使用，idle代表全部显卡空闲。
 #### 例如，gn4、gn8和gn10三个节点有部分显卡被使用，gn1、gn2、gn3和gn5所有显卡被使用，gn6、gn7和gn9空闲。
+#### 4. 显示节点不正常工作的原因
+```bash
+sinfo -R
+```
+|  REASON  | USER | TIMESTAMP | NODELIST |
+|:--------:|:----:|:---------:|:--------:|
+| for test |  fjc |   xx:xx   |   gn[8]  |
