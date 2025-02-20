@@ -57,6 +57,7 @@ ctrl+a+d
 srun -p g_v100 --nodelist=gn8 --gpus=1 python xxx.py
 ```
 #### 其中，-p指定特定分区名称，--nodelist指定节点名。--gpus指定GPU使用数量。
+## **screen指令创建窗口：**
 #### 值得注意的是，当使用srun长时间执行任务时，我们可以结合screen来创建窗口：
 ```bash
 screen -S test
